@@ -1,193 +1,154 @@
 @media screen and (min-width:992px) {
-h1 {
-    margin-top: 15px;
-    width: 100%;
-    font-family: "Parisienne";
-    font-style: normal;
-    font-weight: normal;
-    font-size: 96px;
-    text-align: center;
-    color: #245F15;
-}
-#content {
-    background-image: url("../img/fondPage.jpeg");
-    height: 800px;
-    width: 100%;
-    background-color: #041801;
-    background-repeat: no-repeat;
+/* PARTIE COMMUNE: header + footer */
+#logoContainer {
     float: left;
+    text-align: center;
+    width: 20%;
 }
 #titre {
+    width: 80%;
+    height: 160px;
     float: left;
-    height: 155px;
-    width: 100%;
-    background-color: white;
+    display: flex;
 }
-#menu { 
-    float: left;
-    height: 60px;
+h1 {
+    font-family: "Parisienne";
+    color: #245F15;
+    font-size: 96px;
     width: 100%;
-    background-color: rgba(185, 202, 139, 0.53);    
+    margin-bottom: 0px;
+    text-align: center;
+    align-self: center;
+}
+.container {
+    float: left;
+    width: 100%;
+    max-width: 100%;
+}
+#logoMin, #logoMinContainer {
+    width: 0%;
+}
+#menu p {
+    float: left;
+    text-align: center;
+    width: 20%;
+}
+#buttonContainer {
+    float: left;
+    width: 0%;
+}
+.navbar {
+    padding: 0 0;
+    width: 100%;
+    background-color: rgb(185, 202, 139); 
+}
+.navbar-nav {
+    width: 100%;
+}
+.navbar-brand {
+    font-family: "Parisienne";
+    font-size: 36px;
+    text-align: center;
+    color: #245F15;
+    padding-bottom: 0px;
+    margin-right: 0px;
+    padding-top: 10px;
+}
+.navbar-brand:hover {
+    color: white;
 }
 li {
-    display: inline-block; 
-    list-style:none;
-    font-size: 24px;
-    width: 20.5%;
-}
-#menu li {
-    text-align : center ;
-    line-height: 40px ;
-}
-#menu li a 
-{
-    display: block ;
-    text-decoration: none ;
-    color : #000000;
-}
-#menu li:hover
-{
-    background-color: #ff7506;
-    border-radius: 10px;
-}
-#titre2 {
-    display: none;
-}
-#imglogo {
-    float: left;
-    margin-left: 30px;
-}
-#presentationConteneur {
-    float: left;
-    margin-top: 200px;
-    height: 390px;
-    width: 100%;
-}
-#imgboutique {
-    float: left;
-    width: 50%;
-    margin-left: 30px;
-}
-.paragraph {
-    float: left;
-    margin-top: 20px;
-    margin-left: 5%;
-    width: 40%;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 20px;
-    line-height: 16px;
+    width: 25%;
     text-align: center;
-    color: #FFA5A5;
+}
+#menu a {
+    float: left;
+    width: 25%;
+    color: #7d1f1f;
+    font-family: "Parisienne";
+    font-size: 36px;
+}
+#presentationContent, #realisationContent, #occasionContent, #contactContent {
+    background-image: url("../img/fondPage.jpeg");
+    text-align: center;
+    width: 100%;
+    float: left;
 }
 #evenement {
     float: left;
-    height: 60px;
     width: 100%;
+    height: 50px;
     background-color: rgba(185, 202, 139, 0.53);
 }
-#evenementPhrase {
+#evenement p {
     width: 100%;
-    height: 44px;
-    margin: 0 auto;
-    margin-top: 8px;
-    font-family: "La Belle Aurore";
-    font-style: normal;
-    font-weight: normal;
-    font-size: 24px;
     text-align: center;
+    font-family: "La Belle Aurore";
+    font-size: 20px;
+    padding-top: 10px;
     color: #204919;
 }
+/* Fin partie Commune */
+/* Page Présentation */
+#presentationContent {
+    display: flex;
+}
+#presentationContent picture {
+    float: left;
+    width: 50%;
+    align-self: center;
+}
+#presentationContent img {
+    width: 100%;
+}
+#presentationTextContainer{
+    float: left;
+    width: 50%;
+}
+#presentationContent p {
+    float: left;
+    margin-top: 20px;
+    margin-left: 5%;
+    font-family: "Parisienne";
+    color: white;
+}
+/* Fin page presentation */
 /* début css présentation sébastien*/
-.bouquets img{
-    width: 200px;
-    height: 200px;
-}
-.presentationbouquet,.bouquet1,.bouquet2,.bouquet3{
+.realisationProduct{
     float: left;
     margin-left: 5%;
 }
-.presentationbouquet h2{
+.realisationText h2{
     text-align: center;
     font-size: 2em;
 }
-.presentationbouquet p{
+.realisationText p{
     font-size: 1.3em;
     color: white;
-    width: 400px;
     text-align: center;
-}
-.bouquets figcaption{
-    width: 200px;
-    text-align: center;
-    color: white;
-}
-.composition img{
-    width: 200px;
-    height: 200px;
-}
-.presentationcomposition,.composition1,.composition2,.composition3{
-    float: left;
-    margin-left: 5%;
-}
-.presentationcomposition h2{
-    text-align: center;
-    font-size: 2em;
-}
-.presentationcomposition p{
-    font-size: 1.3em;
-    color: white;
-    width: 400px;
-    text-align: center;
-}
-.composition figcaption{
-    width: 200px;
-    text-align: center;
-    color: white;
-}
-.plants img{
-    width: 200px;
-    height: 200px;
-}
-.presentationplants,.plants1,.plants2,.plants3{
-    float: left;
-    margin-left: 5%;
-}
-.presentationplants h2{
-    text-align: center;
-    font-size: 2em;
-}
-.presentationplants p{
-    font-size: 1.3em;
-    color: white;
-    width: 400px;
-    text-align: center;
-}
-.plants figcaption{
-    width: 200px;
-    text-align: center;
-    color: white;
 }
 /* Page occasion: Thomas*/
-.occasionConteneur {
+.occasionConteneur, .realisationContainer {
     float: left;
     width: 100%;
-    height: 200px;
     margin-top: 50px;
+    display: flex;
+    align-items: stretch;
 }
-.occasionImages {
-    float: left;
-    width: 80%;
-    height: 200px;
-}
-.occasionTextConteneur {
+.occasionTextConteneur, .realisationTextContainer {
     float: left;
     width: 20%;
-    height: 200px;
+    min-width: 250px;
+    display: flex;
 }
-.occasionText {
-    margin: 0 auto;
-    width: 230px;
+.occasionText, .realisationText {
+    width: 90%;
+    margin-left: 5%;
+    align-self: center;
+}
+.occasionImages, .realisationImage {
+    float: left;
+    width: 80%;
 }
 .occasionText h2 {
     font-size: 48px;
@@ -203,88 +164,84 @@ li {
 .occasionProducts {
     float: left;
     margin-left: 5%;
+    margin-bottom: 30px;
     height: 160px;
     width: 160px;
 }
-.occasionProducts figcaption {
+.occasionProducts figcaption, .realisationProduct figcaption {
     text-align: center;
     color: white;
 }
 /* fin page occasion */
 /* debut page contact */
-#contacttitle{
+.contactContainer {
+    width: 100%;
+    float: left;
+    margin-top: 50px;
+}
+.contactfigur {
+    height: 200px;
+    width: 33.33%;
     text-align: center;
-    color: white;
-    font-size: xx-large;
+    float: left;
 }
 .contacttext {
     color:white;
     float: left;
-    font-size: 30px;
+    width: 100%;
+    font-size: 28px;
     text-align: center;
 }
-.contactimg{
+#addressContainer {
+    width: 50%;
     float: left;
-    width: 160px;
-    height: 160px;
 }
 iframe {
-    padding-left: 13%;
     float: left;
-    width: 350px;
+    width: 60%;
     height: 350px;
-    margin-top: 75px;
+    margin-left: 20%
 }
-.addres {
-    margin: 0 auto;
+#tableContainer {
+    width: 50%;
+    float: left;
 }
 table, td {
-border: solid 1px white;
-color: white;
-margin-left: 800px;
-margin-top: 310px;
-text-align: center;
+    border: solid 1px white;
+    color: white;
+    text-align: center;
 }
 table {
     height: 350px;
-    width: 350px;
-}
-.contactfigur {
-    height: 200px;
-    width: 200px;
-    float: left;
-    margin-left: 12%;
+    width: 60%;
+    margin-left: 20%;
 }
 }
 @media screen and (max-width:991px) {
-.col-12 {
-    padding-left: 0;
-    padding-right: 0;
-}
+/* PARTIE COMMUNE: Partie haute + footer */
 .container {
-    display: flex;
-}
-.container picture {
-    flex-grow: 2;
-}
-.container button {
-    flex-grow: 0;
-}
-.container a {
-    flex-grow: 7;
-}
-#content {
-    text-align: center;
-    background-image: url("../img/fondPage.jpeg");
+    float: left;
     width: 100%;
-    float: left;
+    max-width: 100%;
 }
-#menu img {
+#menu picture, #buttonContainer {
     float: left;
+    text-align: center;
+    width: 30%;
+}
+#logo {
+    float: left;
+    width: 0%;
+}
+#menu p {
+    float: left;
+    text-align: center;
+    width: 40%;
 }
 .navbar {
     position: fixed;
-    top: 0; 
+    top: 0;
+    padding: 0 0;
     width: 100%;
     background-color: rgb(185, 202, 139); 
 }
@@ -294,18 +251,39 @@ h1, .navbar-brand {
     text-align: center;
     color: #245F15;
 }
+.navbar-brand {
+    padding-bottom: 0px;
+    margin-right: 0px;
+    padding-top: 10px;
+}
+.navbar-brand:hover {
+    color: white;
+}
+li {
+    text-align: center;
+}
+#menu a {
+    color: #7d1f1f;
+    font-family: "Parisienne";
+    font-size: 20px;
+}
 #titre {
+    text-align: center;
+    width: 100%;
     padding-top: 100px;
+}
+#presentationContent, #realisationContent, #occasionContent, #contactContent {
+    background-image: url("../img/fondPage.jpeg");
+    text-align: center;
+    width: 100%;
+    float: left;
 }
 #evenement {
     float: left;
     width: 100%;
     background-color: rgba(185, 202, 139, 0.53);
 }
-.navbar-brand:hover {
-    color: white;
-}
-#evenementPhrase {
+#evenement p {
     width: 100%;
     padding-bottom: 10px;
     padding-top: 10px;
@@ -315,4 +293,17 @@ h1, .navbar-brand {
     text-align: center;
     color: #204919;
 }
+/* Fin partie Commune */
+/* Page Présentation */
+#presentationContent img {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+#presentationContent p {
+    font-family: "Parisienne";
+    color: white;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+/* Fin page presentation */
 }
