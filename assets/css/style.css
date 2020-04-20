@@ -174,7 +174,6 @@ li {
     max-width: 100%;
     margin-left: 2.77%;
 }
-
 .occasionProducts figcaption, .realisationProduct figcaption {
     text-align: center;
     color: white;
@@ -184,7 +183,6 @@ li {
 .contactContainer {
     width: 100%;
     float: left;
-    margin-top: 50px;
 }
 .contactfigur {
     height: 200px;
@@ -206,12 +204,21 @@ li {
 iframe {
     float: left;
     width: 60%;
+    padding-bottom: 30px;
+    margin-left: 20%;
     height: 350px;
-    margin-left: 20%
+}
+#contact{
+    float: left;
+    text-align: center;
+    color: white;
+    width: 100%;
+    padding-bottom: 30px;
+    padding-top: 30px;
 }
 #tableContainer {
     width: 50%;
-    float: left;
+    float: left; 
 }
 table, td {
     border: solid 1px white;
@@ -219,9 +226,16 @@ table, td {
     text-align: center;
 }
 table {
-    height: 350px;
     width: 60%;
     margin-left: 20%;
+    padding-bottom: 20px;
+    margin-top: 50px;
+
+}
+caption{
+    caption-side: top;
+    color: white;
+    text-align: center;
 }
 }
 @media screen and (max-width:991px) {
@@ -319,6 +333,36 @@ li {
     height: 850px;
 }
 /* Fin page presentation */
+/* Page Contact */
+#contact {
+font-family: "La Parisienne";
+font-size: 25px;
+font-style: italic;
+text-align: center;
+width: 100%;
+padding-bottom: 30px;
+color: white;
+}
+#horaire p{
+    font-family: "La Parisienne";
+    font-size: 20px;
+    text-align: center;
+    padding-bottom: 0px;
+    color: white;
+    }
+.contacttext{
+    font-family: "La Parisienne";
+    font-size: 15px;
+    text-align: center;
+    padding-bottom: 0px;
+    color: white;
+}
+.contactContainer{
+    margin: 0px;
+}
+.iframe{
+    width: 60%;
+    margin-left: 20%;
 }
 /* Page Réalisation */
 #realisationContent {
@@ -351,4 +395,5 @@ h2{
 .occasionContainer{
     width: 100%;
     float: left;
+}
 }
