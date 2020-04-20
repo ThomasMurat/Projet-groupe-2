@@ -306,4 +306,40 @@ li {
     margin-left: 10px;
 }
 /* Fin page presentation */
+/* Page Contact */
+#contactcontent {
+
+}
+h2{
+font-family: "La Parisienne";
+font-size: 25px;
+font-style: italic;
+text-align: center;
+padding-left: 20px;
+padding-top: 0px;
+padding-bottom: 30px;
+color: white;
+}
+h3{
+    font-family: "La Parisienne";
+    font-size: 20px;
+    text-align: center;
+    padding-bottom: 0px;
+    color: white;
+    }
+.contacttext{
+    font-family: "La Parisienne";
+    font-size: 15px;
+    text-align: center;
+    padding-bottom: 0px;
+    color: white;
+}
+.contactContainer{
+    margin: 0px;
+
+}
+ 
+
+ 
+
 }
