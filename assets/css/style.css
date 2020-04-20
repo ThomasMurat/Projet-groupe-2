@@ -74,6 +74,9 @@ li {
     width: 100%;
     float: left;
 }
+#presentationContent{
+    height: 650px;
+}
 #evenement {
     float: left;
     width: 100%;
@@ -104,13 +107,16 @@ li {
 #presentationTextContainer{
     float: left;
     width: 50%;
+    display: flex;
 }
 #presentationContent p {
-    float: left;
-    margin-top: 20px;
     margin-left: 5%;
+    margin-right: 5%;
     font-family: "Parisienne";
     color: white;
+}
+#paragraphContainer{
+    align-self: center;
 }
 /* Fin page presentation */
 /* début css présentation sébastien*/
@@ -121,6 +127,7 @@ li {
 .realisationText h2{
     text-align: center;
     font-size: 2em;
+    color: white;
 }
 .realisationText p{
     font-size: 1.3em;
@@ -163,11 +170,10 @@ li {
 }
 .occasionProducts {
     float: left;
-    margin-left: 5%;
     margin-bottom: 30px;
-    height: 160px;
-    width: 160px;
-}
+    max-width: 100%;
+    margin-left: 2.77%;
+ }
 .occasionProducts figcaption, .realisationProduct figcaption {
     text-align: center;
     color: white;
@@ -177,7 +183,6 @@ li {
 .contactContainer {
     width: 100%;
     float: left;
-    margin-top: 50px;
 }
 .contactfigur {
     height: 200px;
@@ -199,12 +204,21 @@ li {
 iframe {
     float: left;
     width: 60%;
+    padding-bottom: 30px;
+    margin-left: 20%;
     height: 350px;
-    margin-left: 20%
+}
+#contact{
+    float: left;
+    text-align: center;
+    color: white;
+    width: 100%;
+    padding-bottom: 30px;
+    padding-top: 30px;
 }
 #tableContainer {
     width: 50%;
-    float: left;
+    float: left; 
 }
 table, td {
     border: solid 1px white;
@@ -212,13 +226,23 @@ table, td {
     text-align: center;
 }
 table {
-    height: 350px;
     width: 60%;
     margin-left: 20%;
+    padding-bottom: 20px;
+    margin-top: 50px;
+
+}
+caption{
+    caption-side: top;
+    color: white;
+    text-align: center;
 }
 }
 @media screen and (max-width:991px) {
 /* PARTIE COMMUNE: Partie haute + footer */
+#menu {
+    z-index: +10;
+ }
 .container {
     float: left;
     width: 100%;
@@ -305,11 +329,11 @@ li {
     margin-right: 10px;
     margin-left: 10px;
 }
+#presentationContent{
+    height: 850px;
+}
 /* Fin page presentation */
 /* Page Contact */
-#contactcontent {
-
-}
 h2{
 font-family: "La Parisienne";
 font-size: 25px;
@@ -320,7 +344,7 @@ padding-top: 0px;
 padding-bottom: 30px;
 color: white;
 }
-h3{
+#horaire p{
     font-family: "La Parisienne";
     font-size: 20px;
     text-align: center;
@@ -336,10 +360,41 @@ h3{
 }
 .contactContainer{
     margin: 0px;
-
 }
- 
-
- 
-
+.iframe{
+    width: 60%;
+    margin-left: 20%;
+}
+/* Page Réalisation */
+#realisationContent {
+    font-family: "Parisienne";
+    color: white;
+}
+.realisationProduct{
+    float: left;
+}
+.realisationContainer{
+    width: 100%;
+    float: left;
+}
+.row{
+    margin: 0;
+}
+h2{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+/* Fin Page Réalisation */
+/* Page Occasion */
+#occasionContent {
+    font-family: "Parisienne";
+    color: white;
+}
+.occasionProduct{
+    float: left;
+}
+.occasionContainer{
+    width: 100%;
+    float: left;
+}
 }
